@@ -8,7 +8,7 @@ Der Button "Fotos in der Cloud" verweist auf den freigegebenen OneDrive-/SharePo
 
 ## Lokal testen
 
-Die Seite besteht nur aus HTML, CSS, JavaScript und einem SVG. Sie kann direkt geoeffnet oder ueber einen kleinen lokalen Server getestet werden.
+Die Seite besteht nur aus HTML, CSS und JavaScript. Sie kann direkt geoeffnet oder ueber einen kleinen lokalen Server getestet werden.
 
 ## Vercel-Veröffentlichung
 
