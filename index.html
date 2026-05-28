@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Abschlussfeier 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero__content">
+          <p class="eyebrow">Glück gehabt</p>
+          <h1 id="page-title">Abschlussfeier 2026</h1>
+          <p class="hero__text">
+            Fotos ansehen, Glücksrad drehen und den Abschlussabend noch einmal
+            feiern: schlicht, schnell und bereit für alle Geräte.
+          </p>
+          <div class="hero__actions">
+            <a
+              class="button button--primary"
+              href="https://brohltalschule-my.sharepoint.com/:f:/g/personal/dimitri_geier_brohltalschule_de/IgC25A7IQWuMS5DrBzNZTL5AAVXJAK99a3NmneoTj_u7Mnk?e=MavQKb"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abschlussfotos in der OneDrive Cloud öffnen"
+            >
+              <span aria-hidden="true">◆</span>
+              Fotos in der Cloud
+            </a>
+            <a class="button button--ghost" href="#gluecksrad">
+              <span aria-hidden="true">♠</span>
+              Glücksrad drehen
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__chip" aria-hidden="true">
+          <img src="assets/casino-chip.svg" alt="" />
+        </div>
+      </section>
+
+      <section class="info-bar" aria-label="Kurzinfos zur Abschlussfeier">
+        <span><strong>Fotos</strong> OneDrive-Ordner</span>
+        <span><strong>Chance</strong> 1 von 20</span>
+        <span><strong>Motto</strong> Glück gehabt</span>
+      </section>
+
+      <section class="wheel-section" id="gluecksrad" aria-labelledby="wheel-title">
+        <div class="wheel-copy">
+          <p class="eyebrow">Casino-Challenge</p>
+          <h2 id="wheel-title">Dreh den Abschluss-Chip</h2>
+          <p>
+            Bei jedem Dreh entscheidet der Zufall neu. Landet der Chip im
+            goldenen Feld, ist es ein Gewinn.
+          </p>
+          <div class="stats" aria-live="polite">
+            <span><strong id="spinCount">0</strong> Drehungen</span>
+            <span><strong id="winCount">0</strong> Gewinne</span>
+          </div>
+        </div>
+
+        <div class="wheel-table">
+          <div class="pointer" aria-hidden="true"></div>
+          <div class="wheel-wrap">
+            <div class="wheel" id="wheel" aria-hidden="true">
+              <span class="wheel__label wheel__label--top">♠</span>
+              <span class="wheel__label wheel__label--right">♥</span>
+              <span class="wheel__label wheel__label--bottom">♣</span>
+              <span class="wheel__label wheel__label--left">♦</span>
+              <span class="wheel__jackpot">Jackpot</span>
+            </div>
+          </div>
+
+          <div class="controls">
+            <button class="button button--spin" id="spinButton" type="button">
+              Chip drehen
+            </button>
+            <p class="result" id="result" role="status" aria-live="polite">
+              Bereit für den ersten Dreh.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
