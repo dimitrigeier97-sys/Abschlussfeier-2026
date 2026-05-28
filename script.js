@@ -17,11 +17,11 @@ function randomInt(maxExclusive) {
 
 function getTargetAngle(isWinner) {
   if (isWinner) {
-    return randomInt(18);
+    return randomInt(17) - 8;
   }
 
-  const losingSlices = [45, 95, 142, 194, 247, 306];
-  return losingSlices[randomInt(losingSlices.length)] + randomInt(20) - 10;
+  const losingSegment = randomInt(19) + 1;
+  return losingSegment * 18 + randomInt(11) - 5;
 }
 
 function spinWheel() {
@@ -30,7 +30,7 @@ function spinWheel() {
   isSpinning = true;
   spinButton.disabled = true;
   result.className = "result";
-  result.textContent = "Der Chip rollt über den Filz...";
+  result.textContent = "Das Glücksrad dreht sich...";
 
   const isWinner = randomInt(20) === 0;
   const targetAngle = getTargetAngle(isWinner);
